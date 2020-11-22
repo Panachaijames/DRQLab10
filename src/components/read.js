@@ -10,7 +10,7 @@ export class Read extends React.Component{
         axios.get('http://localhost:3000/api/movies')
         .then(
             (response) => {
-                this.setState({movies: response.data.movies})
+                this.setState({movies: response.data})
             }
         )
         .catch(
